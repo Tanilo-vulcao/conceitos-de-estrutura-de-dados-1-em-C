@@ -1,40 +1,5 @@
 #include <stdio.h>
 
-/*
-descricao do que foi feito
-
-foi criado um vetor contendo os horarios de chegada de
-10 fornecedores. Os horarios sao representados por
-minutos decorridos desde o inicio do dia.
-
-Por exemplo, o valor 480 representa 08:00, pois 8 horas
-correspondem a 480 minutos.
-
-Como os horarios estao desordenados, foi utilizado o
-algoritmo Insertion Sort para coloca-los em ordem
-cronologica crescente.
-
-O Insertion Sort funciona considerando inicialmente o
-primeiro elemento como ordenado. Depois ele pega o
-proximo elemento, armazena seu valor em uma variavel
-chamada chave e compara com os elementos anteriores.
-
-Enquanto o elemento anterior for maior que a chave,
-ele e deslocado uma posicao para a direita. Quando a
-posicao correta e encontrada, a chave e colocada nela.
-
-Esse processo continua ate que todos os elementos do
-vetor estejam ordenados.
-
-Na main e criado o vetor com os 10 horarios, uma variavel
-para armazenar a chave e as variaveis de controle dos
-lacos. Depois o algoritmo percorre o vetor e organiza
-os horarios.
-
-Por fim, o vetor e percorrido novamente e os horarios
-ordenados sao exibidos na tela.
-*/
-
 int main() {
 
     // cria o vetor contendo os horarios dos fornecedores
