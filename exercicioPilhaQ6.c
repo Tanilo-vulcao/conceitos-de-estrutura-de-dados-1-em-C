@@ -1,44 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
-descricao do que foi feito
-
-foi criada uma estrutura para armazenar cada acao realizada
-na alteracao do preco de um produto. A estrutura possui uma
-variavel do tipo float para armazenar o preco_antigo e um
-ponteiro para apontar para a proxima acao da pilha.
-
-Foi feito um typedef para renomear a estrutura para Acao.
-
-Foi criada a funcao empilhar_acao, que recebe como parametros
-o ponteiro do topo da pilha e o preco antigo. A funcao aloca
-dinamicamente um novo no e verifica se a alocacao falhou.
-Depois o preco antigo e armazenado no novo no e o novo no
-passa a apontar para o antigo topo da pilha. Por fim, o topo
-passa a apontar para o novo no.
-
-Tambem foi criada a funcao desfazer, que recebe o ponteiro
-do topo e o preco atual. Primeiro e verificado se a pilha
-esta vazia. Caso esteja vazia, nao existe nenhuma alteracao
-para desfazer.
-
-Caso exista uma acao, um ponteiro auxiliar recebe o no que
-esta no topo. O preco antigo desse no e armazenado em uma
-variavel. Depois o topo passa a apontar para o proximo no,
-o no antigo e liberado e o preco antigo e retornado.
-
-Na main e criado o preco inicial do produto e depois sao
-realizadas algumas alteracoes. Antes de cada alteracao,
-o preco atual e colocado na pilha para que possa ser
-recuperado posteriormente.
-
-Quando a funcao desfazer e chamada, a ultima alteracao
-realizada e desfeita primeiro. Isso acontece porque a pilha
-utiliza o principio LIFO, ou seja, o ultimo elemento que
-entrou e o primeiro que sai.
-*/
-
 // cria a estrutura que representa uma acao de alteracao
 struct acao {
     float preco_antigo;    // guarda o preco antes da alteracao
