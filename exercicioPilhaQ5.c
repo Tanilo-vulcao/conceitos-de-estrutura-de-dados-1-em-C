@@ -2,41 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-/*
-descricao do que foi feito
-
-foi criada uma estrutura para armazenar os dados de cada caixa,
-onde existe uma variavel para guardar o codigo de rastreio e um
-ponteiro para apontar para o proximo no da pilha ou para NULL,
-que indica o fim da pilha. Foi feito um typedef para renomear
-a estrutura para Caixa.
-
-Foi criada a funcao empilhar_caixa, que recebe como parametros
-o ponteiro do topo da pilha do tipo Caixa*, e o codigo de rastreio
-da caixa. Dentro da funcao e feita uma alocacao dinamica de memoria
-para criar um novo no. Depois e feita uma verificacao para saber
-se a alocacao falhou. Caso falhe, a execucao e encerrada.
-
-Se a alocacao ocorrer corretamente, o codigo de rastreio e
-armazenado no novo no. Depois o novo no aponta para o antigo topo
-da pilha e o ponteiro topo passa a apontar para o novo no.
-
-Em seguida foi criada a funcao desempilhar_caixa, que recebe
-como parametro o ponteiro do topo da pilha. Primeiro e verificado
-se a pilha esta vazia. Caso esteja vazia, nao existe caixa para
-retirar. Caso exista uma caixa, e criado um ponteiro auxiliar
-para guardar o no que esta no topo. Depois o topo passa a apontar
-para o proximo no e a memoria do no retirado e liberada.
-
-Na main e criado o ponteiro topo, que inicialmente recebe NULL,
-representando uma pilha vazia. Depois sao adicionadas algumas
-caixas utilizando a funcao empilhar_caixa e posteriormente elas
-sao retiradas utilizando desempilhar_caixa.
-
-Como a pilha funciona pelo principio LIFO, a ultima caixa colocada
-e a primeira a ser retirada.
-*/
-
 
 // cria a estrutura que armazena os dados de cada caixa
 // e tambem o ponteiro que aponta para o proximo no
