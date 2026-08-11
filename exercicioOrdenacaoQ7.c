@@ -1,38 +1,5 @@
 #include <stdio.h>
 
-/*
-descricao do que foi feito
-
-foi criado um vetor contendo 8 precos de pacotes turisticos
-que inicialmente estao desordenados.
-
-Para organizar esses valores foi utilizado o algoritmo
-Bubble Sort. Esse algoritmo percorre o vetor comparando
-dois elementos vizinhos. Caso o elemento da esquerda seja
-maior que o elemento da direita, os dois valores sao trocados.
-
-Para realizar a troca foi criada uma variavel auxiliar
-chamada temp, que armazena temporariamente um dos valores
-para que ele nao seja perdido durante a troca.
-
-Foram utilizados dois comandos for. O primeiro controla
-a quantidade de vezes que o vetor sera percorrido. O segundo
-faz as comparacoes entre os elementos vizinhos.
-
-A cada passagem pelo vetor, o maior valor que ainda nao
-esta na posicao correta vai sendo levado para o final.
-Por isso, a quantidade de comparacoes necessarias diminui
-a cada nova passagem.
-
-Depois que o vetor esta completamente ordenado, um outro
-for percorre o vetor e imprime todos os precos em ordem
-crescente.
-
-Na main sao declarados o vetor, a variavel auxiliar e as
-variaveis de controle dos lacos. Depois o Bubble Sort e
-executado e o resultado e exibido na tela.
-*/
-
 int main() {
 
     // cria o vetor com os precos dos 8 pacotes
