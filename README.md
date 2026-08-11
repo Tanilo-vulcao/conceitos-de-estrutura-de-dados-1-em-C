@@ -1,2 +1,2 @@
-# conceitos-de-estruturas-de-dados-1-em-C
+# conceitos-de-estruturas-de-dados-I-em-C
  contem os codigos em C dos conceitos estudados em estruturas de dados 1 
